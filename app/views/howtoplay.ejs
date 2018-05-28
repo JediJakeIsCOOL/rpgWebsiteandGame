@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<% include partials/template/head.ejs %>
+<body>
+    
+    <% if (user == "Guest") { %>
+        <% include partials/template/navBar.ejs %>
+    <% } %>
+    <% if (user != "Guest") { %>
+        <% include partials/template/navbarAuth.ejs %>
+    <% } %>
+        
+    </div>
+    <div id="site-intro">
+        <img id="logo-img" src="public/images/sidepages/gameinfo.png"/>
+    </div>
+    <div class="container enemy-headers">
+            <div class="row">
+                <div class="col ">
+                    Description
+                </div>
+                
+            </div>
+            <div class="enemies-wrapper">
+                    <div class="container enemies-container">
+                            <div class="row row-info">
+                              <div style='margin-top: 35px' class="col-xs-6">
+                                  <p>  Travel through different landscapes while increasing your characters power. Fight various enemies that have unique special abilities.  Enemies will attack you on their own if you advance too quickly. Enemies are more aggressive against weaker heroes. Increase your power and they will be more hesitant to attack. A death will result in gold loss for you and will make it more difficult to buy the much needed items at the shop. So be careful! The higher your power is, the less likely a lower level enemy will attack you. Kill lower level enemies until you are strong enough to take on higher level foes.  The higher level enemies yield more experience and gold.  Try and see if you can make it to slay the strongest enemies in the game!
+                                </p>
+                                
+                              </div>     
+                              <div class="col-xs-6">
+                                   <img src="public/images/mainpage/deathknightfight.png">
+                                    
+                              </div>
+                              
+                            
+                            </div>
+                            </div>
+                        
+                        <div class="container enemy-headers">
+                            <div class="row">
+                                <div class="col ">
+                                    Combat System
+                                </div>
+                        
+                            <div class="container combat-system">
+                                    <div class="row row-info">
+                                      <div style ='margin-top: 75px' class="col-xs-6">
+                                        <table>
+                                            <tr>
+                                            <th style='margin-right: 50px'>Stance</th>
+                                            <th>Bonus</th>
+                                            <th> Exp Gained</th>
+                                            </tr>
+                                            <tr>
+                                                <td>Aggressive</td>
+                                                <td>+3 power, -3 defense</td>
+                                                <td>Power and Health</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Defensive</td>
+                                                <td>-3 power, +3 defense</td>
+                                                <td>Defense and Health</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Normal</td>
+                                                <td>0 power, 0 defense</td>
+                                                <td>Shared gain</td>
+                                            </tr>
+                                        </table>
+                                          
+                                      </div>     
+                                      
+                                      <div class="col-xs-6">
+                                           <img src="public/images/mainpage/stancedefense.png">
+                                            
+                                      </div>
+                                      
+    
+                                    </div>
+                                </div>
+                                
+                                
+                                <div class="container enemy-headers">
+                                    <div class="row">
+                                        <div class="col ">
+                                            Shop
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="enemies-wrapper">
+                                            <div class="container enemies-container">
+                                                    <div class="row row-info">
+                                                      <div style='margin-top: 35px' class="col-xs-6">
+                                                          <p>  Visit the shop to buy various items in the game with the gold you have collected from defeating enemies.  Health potions are a must if you want to succeed.
+
+
+                                                        </p>
+                                                        <img src="public/images/mainpage/shopscreenshot1.png">
+                                                      </div>     
+                                                      <div class="col-xs-6">
+                                                           <img style='margin-top: 80px' src="public/images/mainpage//shopscreenshot2.png">
+                                                            
+                                                      </div>
+                                                      
+                                                    
+                                                    </div>
+                                                    </div>
+                                                    <div class="container enemy-headers">
+                                                        <div class="row">
+                                                            <div class="col ">
+                                                                Equipping Items
+                                                            </div>
+                                                            
+                                                        </div>
+                                                        <div class="enemies-wrapper">
+                                                                <div class="container enemies-container">
+                                                                        <div class="row row-info">
+                                                                          <div style='margin-top: 35px' class="col-xs-6">
+                                                                              <p>  
+                                                                                  Buy various items from the shop to power your character up. You can change weapons or shields by clicking the item that is equipped.
+                                                                            </p>
+                                                                            <img src="public/images/mainpage/itemswitch2.png">
+                                                                          </div>     
+                                                                          <div class="col-xs-6">
+                                                                               <img style='margin-top: 80px'src="public/images/mainpage//shopscreenshot1.png">
+                                                                                
+                                                                          </div>
+                                                                          
+                                                                        
+                                                                        </div>
+                                                                        </div>
+</body>
+</html>

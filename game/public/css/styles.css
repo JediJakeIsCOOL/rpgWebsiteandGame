@@ -1,0 +1,218 @@
+body{
+    background-image: url(../images/mainpage/RPG_Background1.png);
+    
+}
+#game-description{
+    font-family: 'Press Start 2P', cursive;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color:black;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    margin-top: 30px
+    
+}
+#top-bar{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: relative;
+    width: 100% !important;
+    /* background-color: */
+}
+.top-login{
+    float: right;
+    margin-right: 20px;
+}
+
+#menu-top-menu{
+    text-align: center !important;
+    float: none;
+    display: inline-block;
+    background-color: black;
+    margin: 0 auto;
+    list-style-type: none;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Cinzel', serif;
+    font-size: 1.2em;
+    color: goldenrod !important;
+    width: 100%;
+    text-decoration: none !important;
+    background: rgba(0, 0, 0, .7);
+    border: .5px solid  goldenrod;
+
+
+    
+}
+li a, li {
+    display: block;
+    color: gold;
+    text-align: center !important;
+    text-decoration: none;
+    margin-left:10px;
+    margin-top:1px;
+    
+}
+ul {
+    list-style-type: none;
+    margin-left: 40px;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    width: 100%;
+}
+
+#logo-img{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+    
+    
+
+
+#video-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+#site-intro{
+    text-align: center;
+    color: white;
+    
+}
+#play-button{
+    margin-top: 50px;
+}
+
+.enemies-container{
+    background: rgba(0, 0, 0, .7);
+    width: 75%;
+    margin: auto;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+font-family: 'Cinzel', serif;
+    color: red;
+    -webkit-text-stroke-width: .1px;
+    -webkit-text-stroke-color: black;
+    font-size: 20px;
+    
+}
+
+.img-enemies{
+    height: 100px;
+    width: 100px;
+}
+.enemy-headers{
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 25px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+     
+}
+.navbar-nav {
+    width: 100%;
+    text-align: center;
+      
+    }
+li {
+    float: none;
+      display: inline-block;
+}
+  
+.high-score-container{
+    background: rgba(0, 0, 0, .7);
+    width: 75%;
+    margin: auto;
+    color: red;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+font-family: 'Cinzel', serif;
+    text-decoration: underline;
+    -webkit-text-stroke-width: .5px;
+    -webkit-text-stroke-color: white;
+    font-size: 20px;
+}
+
+img {
+    max-width:100%;
+max-height:100%;
+}
+
+.row-info{
+    color: white;
+}
+table,
+th,
+td {
+  border: 1px solid white;
+  /* width: 100%; */
+  
+}
+
+table th,
+table td {
+    margin-bottom: 40px;
+  text-align: center;
+  /* Apply cell padding */
+}
+.combat-system{
+    background: rgba(0, 0, 0, .7);
+    width: 75%;
+    margin: auto;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+font-family: 'Cinzel', serif;
+    
+    -webkit-text-stroke-width: .1px;
+    -webkit-text-stroke-color: white;
+    font-size: 20px;
+    
+}
+
+.highscore-container{
+    background: rgba(0, 0, 0, .85);
+    width: 75%;
+    margin: auto;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+font-family: 'Cinzel', serif;
+    font-size: 20px;
+    
+}
+
+highScoreHeading {
+    font-family: 'Cinzel', serif;
+}
+
+#powerHighScore {
+    color: gold;
+}
+
+.numbCol {
+    width: 70px;
+}
+
+.userNameCol {
+    width: 160px;
+}
+.levelCol {
+    width: 100px;
+}
+.levelExpCol {
+    width: 140px;
+}
+
+.powerLv {
+    color: green;
+}
+
+.defenseLv {
+    color: blue;
+}
+
+.healthLv {
+    color: red;
+}

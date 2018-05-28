@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<% include partials/template/head.ejs %>
+<body>
+    
+    <% if (user == "Guest") { %>
+        <% include partials/template/navBar.ejs %>
+    <% } %>
+    <% if (user != "Guest") { %>
+        <% include partials/template/navbarAuth.ejs %>
+    <% } %>
+        
+    </div>
+    <div id="site-intro">
+        <img id="logo-img" src="public/images/sidepages/highscores.png"/>
+    </div>
+    <!-- <div class="container enemy-headers">
+            <div class="row">
+                <div class="col-xs-3">
+                    Username
+                </div>
+                <div class="col-xs-3">
+                        Level
+                    </div>
+                    <div class="col-xs-3">
+                            Total Gold
+                        </div>
+                        <div class="col-xs-3">
+                                Total Experience
+                            </div>
+            </div>
+            <div class="enemies-wrapper">
+                    <div class="container enemies-container">
+                            <div class="row first-row-enemies">
+                              <div class="col-xs-3">
+                                 <u> <p>  JediJAke </p><u>
+                                
+                              </div>     
+                              <div class="col-xs-3">
+                                    <p> Lvl: 20 <font color='lime'></font></p>
+                                    
+                                
+                              </div>
+                              
+                              <div class="col-xs-3" style="color: white">
+                                    <p> 4000 <font color='gold'>gold </font></p>
+                                
+                              </div>
+                              <div class="col-xs-3" style="color: white">
+                                    <p> 100,000 total exp </p>
+                                
+                              </div>
+                        </div>
+                    </div>
+                </br> -->
+                <table id="powerHighScore" class="highscore-container">
+                    <th class="numbCol highScoreHeading">#</th>
+                    <th class="userNameCol highScoreHeading">Username</th>
+                    <th class="levelCol powerLv highScoreHeading">Power Lv</th>
+                    <th class="levelExpCol powerLv highScoreHeading">Power Exp</th>
+                    <th class="levelCol defenseLv highScoreHeading">Defense Lv</th>
+                    <th class="levelExpCol defenseLv highScoreHeading">Defense Exp</th>
+                    <th class="levelCol healthLv highScoreHeading">Health Lv</th>
+                    <th class="levelExpCol healthLv highScoreHeading">Health Exp</th>
+                </table>
+
+
+    </body>
+<script src="/js/highscore.js" type="text/javascript"></script>
+</html>

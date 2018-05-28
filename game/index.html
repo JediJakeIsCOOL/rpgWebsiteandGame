@@ -1,0 +1,151 @@
+<!-- For tutorial https://www.youtube.com/watch?v=7cpZ5Y7THmo -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Kingdom of Objalinsk</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Cinzel|Open+Sans" rel="stylesheet">
+        <link rel="stylesheet" href="public/css/game.css">
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+        
+        <script src="/socket.io/socket.io.js"></script>
+        <script type="text/javascript" src="js/phaser.js"></script>
+        <script type="text/javascript" src="js/utilities/basescene.js"></script>
+
+        <script type="text/javascript" src="js/scenes/Main.js"></script>
+
+        <script type="text/javascript" src="js/scenes/Store.js"></script>
+
+        <script type="text/javascript" src="js/scenes/Area98_100.js"></script>
+        <script type="text/javascript" src="js/scenes/Area98_101.js"></script>
+        <script type="text/javascript" src="js/scenes/Area98_102.js"></script>
+        <script type="text/javascript" src="js/scenes/Area98_103.js"></script>
+        <script type="text/javascript" src="js/scenes/Area98_104.js"></script>
+        <script type="text/javascript" src="js/scenes/Area98_105.js"></script>
+        <script type="text/javascript" src="js/scenes/Area98_106.js"></script>
+        <script type="text/javascript" src="js/scenes/Area98_107.js"></script>
+        <script type="text/javascript" src="js/scenes/Area98_112.js"></script>
+        <script type="text/javascript" src="js/scenes/Area98_113.js"></script>
+        <script type="text/javascript" src="js/scenes/Area98_114.js"></script>
+
+        <script type="text/javascript" src="js/scenes/Area99_100.js"></script>
+        <script type="text/javascript" src="js/scenes/Area99_101.js"></script>
+        <script type="text/javascript" src="js/scenes/Area99_102.js"></script>
+        <script type="text/javascript" src="js/scenes/Area99_103.js"></script>
+        <script type="text/javascript" src="js/scenes/Area99_104.js"></script>
+        <script type="text/javascript" src="js/scenes/Area99_105.js"></script>
+        <script type="text/javascript" src="js/scenes/Area99_106.js"></script>
+        <script type="text/javascript" src="js/scenes/Area99_107.js"></script>
+        <script type="text/javascript" src="js/scenes/Area99_112.js"></script>
+        <script type="text/javascript" src="js/scenes/Area99_113.js"></script>
+        <script type="text/javascript" src="js/scenes/Area99_114.js"></script>
+       
+        <script type="text/javascript" src="js/scenes/Area100_100.js"></script>
+        <script type="text/javascript" src="js/scenes/Area100_101.js"></script>
+        <script type="text/javascript" src="js/scenes/Area100_102.js"></script>
+        <script type="text/javascript" src="js/scenes/Area100_103.js"></script>
+        <script type="text/javascript" src="js/scenes/Area100_104.js"></script>
+        <script type="text/javascript" src="js/scenes/Area100_105.js"></script>
+        <script type="text/javascript" src="js/scenes/Area100_106.js"></script>
+        <script type="text/javascript" src="js/scenes/Area100_107.js"></script>
+        <script type="text/javascript" src="js/scenes/Area100_108.js"></script>
+        <script type="text/javascript" src="js/scenes/Area100_112.js"></script>
+        <script type="text/javascript" src="js/scenes/Area100_113.js"></script>
+        <script type="text/javascript" src="js/scenes/Area100_114.js"></script>
+ 
+        <script type="text/javascript" src="js/scenes/Area101_101.js"></script>
+        <script type="text/javascript" src="js/scenes/Area101_102.js"></script>
+        <script type="text/javascript" src="js/scenes/Area101_105.js"></script>
+        <script type="text/javascript" src="js/scenes/Area101_106.js"></script>
+        <script type="text/javascript" src="js/scenes/Area101_107.js"></script>
+        <script type="text/javascript" src="js/scenes/Area101_108.js"></script>
+        <script type="text/javascript" src="js/scenes/Area101_111.js"></script>
+        <script type="text/javascript" src="js/scenes/Area101_112.js"></script>
+        <script type="text/javascript" src="js/scenes/Area101_113.js"></script>
+        <script type="text/javascript" src="js/scenes/Area101_114.js"></script>
+     
+        <script type="text/javascript" src="js/scenes/Area102_101.js"></script>
+        <script type="text/javascript" src="js/scenes/Area102_105.js"></script>
+        <script type="text/javascript" src="js/scenes/Area102_106.js"></script>
+        <script type="text/javascript" src="js/scenes/Area102_107.js"></script>
+        <script type="text/javascript" src="js/scenes/Area102_108.js"></script>
+        <script type="text/javascript" src="js/scenes/Area102_111.js"></script>
+
+        <script type="text/javascript" src="js/scenes/Area103_106.js"></script>
+        <script type="text/javascript" src="js/scenes/Area103_107.js"></script>
+        <script type="text/javascript" src="js/scenes/Area103_108.js"></script>
+        <script type="text/javascript" src="js/scenes/Area103_111.js"></script>
+
+        <script type="text/javascript" src="js/scenes/Area104_107.js"></script>
+        <script type="text/javascript" src="js/scenes/Area104_108.js"></script>
+        <script type="text/javascript" src="js/scenes/Area104_110.js"></script>
+        <script type="text/javascript" src="js/scenes/Area104_111.js"></script>
+
+        <script type="text/javascript" src="js/scenes/Area105_108.js"></script>
+        <script type="text/javascript" src="js/scenes/Area105_109.js"></script>
+        <script type="text/javascript" src="js/scenes/Area105_110.js"></script>
+        <script type="text/javascript" src="js/scenes/Area105_111.js"></script>
+
+        <script type="text/javascript" src="js/scenes/Area106_110.js"></script>
+        <script type="text/javascript" src="js/scenes/Area106_111.js"></script>
+        
+        <script type="text/javascript" src="js/scenes/Area107_110.js"></script>
+        
+        <script type="text/javascript" src="js/scenes/Area108_110.js"></script>
+       
+
+        
+        <!-- Characters -->
+
+        <script type="text/javascript" src="/js/classes/characters/hero.js"></script>
+        <script type="text/javascript" src="/js/classes/characters/goblin.js"></script>
+        <script type="text/javascript" src="/js/classes/characters/deathKnight.js"></script>
+        <script type="text/javascript" src="/js/classes/characters/shadow.js"></script>
+        <script type="text/javascript" src="/js/classes/characters/wizard.js"></script>
+        <script type="text/javascript" src="/js/classes/characters/ranger.js"></script>
+        <script type="text/javascript" src="/js/classes/characters/zombie.js"></script>
+        <script type="text/javascript" src="/js/classes/characters/dragon.js"></script>
+        <script type="text/javascript" src="/js/classes/characters/dragonking.js"></script>
+        
+        <!-- <script type="text/javascript" src="js/classes/statusBar.js"></script> -->
+
+    </head>
+    <body>
+<nav class="navbar sticky-top">
+        <ul id ='menu-top-menu' class="navbar-nav">
+                <li><img style='margin-left: 25px' class="logo-img" src="public/images/mainpage/hero.png"></li>
+                <li id="menu-item-1"><a href="/userPage">Home</a> </li> 
+                <li id='menu-item-2'><a href="/enemies">Enemies</a></li>
+                <li id='menu-item-logo'>
+                    <div id="site-logo">
+                        
+                    </div>
+                </li>
+                <li id='menu-item-3'><a href="/highscores">High Scores</a></li> 
+                <li id='menu-item-4'><a href="/screenshots">Screenshots</a></li> 
+                <li id='menu-item-5'><a href="/howtoplay">Game Info</a></li> 
+                <li id='menu-item-5'><a href="/">Play</a></li>
+                <div class="top-login">
+                    <p> logged in as <span id = "username"></span></p>
+                    <a href='/logout'>Logout</a>
+                        
+        
+                </div>
+            </ul>
+        </nav>
+        <div id="game">
+            <script type="text/javascript" src="/js/game.js"></script>
+        </div>
+        
+
+    </body>
+
+</html>

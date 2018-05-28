@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+        <% include partials/template/head.ejs %>
+<body>
+    <% if (user == "Guest") { %>
+        <% include partials/template/navBar.ejs %>
+    <% } %>
+    <% if (user != "Guest") { %>
+        <% include partials/template/navbarAuth.ejs %>
+    <% } %>
+
+            <div id="site-intro">
+                    <img id="logo-img" src="public/images/sidepages/enemylist.png"/>
+                </div>
+        <div class="container enemy-headers">
+            <div class="row">
+                <div class="col-xs-4">
+                    Enemies
+                </div>
+                <div class="col-xs-4">
+                        Stats
+                    </div>
+                    <div class="col-xs-4">
+                            Abilities
+                        </div>
+            </div>
+        </div>
+        <div class="enemies-wrapper">
+            <div class="container enemies-container">
+                    <div class="row first-row-enemies">
+                      <div class="col-xs-4">
+                         <u> <p>  Goblin </p><u>
+                        <img class="img-enemies" src="public/images/sidepages/goblin.png">
+                      </div>     
+                      <div class="col-xs-4">
+                            <p> Health: <font color='lime'>8</font></p>
+                            <p> Power: <font color='lime'>1</font></p>
+                            <p> Defense: <font color='lime'>2</font></p>
+                            <p> Bounty: <font color='lime'>5-10 gold</font></p>
+                        
+                      </div>
+                      
+                      <div class="col-xs-4" style="color: white">
+                        <p> <u>Coin Grab:<u> 20% chance to steal 2 coins from player</p>
+                        
+                      </div>
+                    </div>
+                    </div>
+                </br>
+                    <div class="container enemies-container">
+                            <div class="row first-row-enemies">
+                              <div class="col-xs-4">
+                                    <u> <p>  Death Knight </p> </u>
+                                <img class="img-enemies" src="public/images/sidepages/medic.png">
+                              </div>     
+                              <div class="col-xs-4">
+                                    <p> Health: <font color='lime'>20</font>  </p>
+                                    <p> Power: <font color='lime'>10</font> </p>
+                                    <p> Defense: <font color='lime'>10</font></p>
+                                    <p> Bounty: <font color='lime'>20-40 gold</font></p>
+                                
+                              </div>
+                              
+                              <div class="col-xs-4" style="color: white">
+                                    <p> <u>LifeSteal:<u> 20% chance to heal itself the same amount as that turns attack</p>
+                                
+                              </div>
+                            </div>
+                            </div>
+                        </br>
+                            <div class="container enemies-container">
+                                    <div class="row first-row-enemies">
+                                      <div class="col-xs-4">
+                                            <u> <p>  Shadow </p> </u>
+                                        <img class="img-enemies" src="public/images/sidepages/shadow.png">
+                                      </div>     
+                                      <div class="col-xs-4">
+                                            <p> Health: <font color='lime'>1</font></p> 
+                                            <p> Power: <font color='lime'>15</font></p>
+                                            <p> Defense: <font color='lime'>4</font></p>
+                                            <p> Bounty: <font color='lime'>35-70 gold</font></p>
+                                    
+                                      </div>
+                                      
+                                      <div class="col-xs-4" style="color: white">
+                                            <p> <u>Shadow Meld:<u> Only takes damage about 10% of the times it is attacked  </p>
+                                        
+                                      </div>
+                                    </div>
+                                </div>
+                            </br>
+                            <div class="container enemies-container">
+                                    <div class="row first-row-enemies">
+                                        <div class="col-xs-4">
+                                                <u> <p>  Wizard </p> </u>
+                                        <img class="img-enemies" src="public/images/sidepages/wizard.png">
+                                        </div>     
+                                        <div class="col-xs-4">
+                                            <p> Health: <font color='lime'>22</font> </p>
+                                            <p> Power: <font color='lime'>20</font></p>
+                                            <p> Defense: <font color='lime'>15</font></p>
+                                            <p> Bounty: <font color='lime'>60-90 gold</font></p>
+                                        
+                                        </div>
+                                        
+                                        <div class="col-xs-4" style="color: white">
+                                            <p> <u>Freeze Ray:<u>     20% chance to freeze oponent for one attack sequence </p>
+                                        
+                                        </div>
+                                    </div>
+                                    </div>
+                                </br>
+                        <div class="container enemies-container">
+                                <div class="row first-row-enemies">
+                                    <div class="col-xs-4">
+                                            <u> <p>  Ranger </p> </u>
+                                    <img class="img-enemies" src="public/images/sidepages/ranger.png">
+                                    </div>     
+                                    <div class="col-xs-4">
+                                        <p> Health: <font color='lime'>28</font> </p>
+                                        <p> Power: <font color='lime'>18</font></p>
+                                        <p> Defense: <font color='lime'>20</font></p>
+                                        <p> Bounty: <font color='lime'>70-120 gold</font></p>
+                                    
+                                    </div>
+                                    
+                                    <div class="col-xs-4" style="color: white">
+                                        <p> <u>Double Shot:<u> 20% chance to shoot two arrows in one attack </p>
+                                    
+                                    </div>
+                                </div>
+                                </div>
+                            </br>
+                    <div class="container enemies-container">
+                            <div class="row first-row-enemies">
+                                <div class="col-xs-4">
+                                    <u> <p>  Zombie </p> </u>
+                                <img class="img-enemies" src="public/images/sidepages/zombie.png">
+                                </div>     
+                                <div class="col-xs-4">
+                                        <p> Health: <font color='lime'>30</font>  </p>
+                                        <p> Power: <font color='lime'>20</font></p>
+                                        <p> Defense: <font color='lime'>25</font></p>
+                                        <p> Bounty: <font color='lime'>100-250 gold</font></p>
+                                
+                                </div>
+                                
+                                <div class="col-xs-4 vcenter" style="color: white">
+                                    <p> <u>Undead:<u> Does not die unless head is chopped off with axe </p>
+                                
+                                </div>
+                            </div>
+                            </div>
+                        </br>
+                            <div class="container enemies-container">
+                                    <div class="row first-row-enemies">
+                                        <div class="col-xs-4">
+                                                <u> <p>  Dragon </p> </u>
+                                        <img class="img-enemies" src="public/images/sidepages/dragon.png" width="200px" />
+                                        </div>     
+                                        <div class="col-xs-4">
+                                            <p> Health: <font color='lime'>45</font> </p>
+                                            <p> Power: <font color='lime'>30</font> </p>
+                                            <p> Defense: <font color='lime'>45</font> </p>
+                                            <p> Bounty: <font color='lime'>400-800 gold</font></p>
+                                            
+                                            
+                                        </div>
+                                        
+                                        <div class="col-xs-4 vcenter" style="color: white">
+                                            <p> <u>Dragon Hellfire:<u> 33% chance to breathe fire killing it's enemies that do not have a special shield</p>
+                                        
+                                        </div>
+                                    </div>
+                                    </div>
+                                </br>
+</body>
+</html>

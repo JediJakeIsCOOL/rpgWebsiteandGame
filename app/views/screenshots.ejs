@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+        <% include partials/template/head.ejs %>
+<body>
+    
+      <% if (user == "Guest") { %>
+            <% include partials/template/navBar.ejs %>
+        <% } %>
+        <% if (user != "Guest") { %>
+            <% include partials/template/navbarAuth.ejs %>
+        <% } %>
+        
+    </div>
+    <div id="site-intro">
+        <img id="logo-img" src="public/images/sidepages/screenshots.png">
+    </div>
+    <div class="enemies-container">
+    <div class="container enemy-headers">
+            <div class="row">
+                <div class="col-xs-6">
+                   <img src= "public/images/mainpage/dragons.png">
+                </div>
+                <div class="col-xs-6">
+                        <img src="public/images/mainpage/wizards.png" />
+                    </div>
+                    
+            </div>
+        </br>
+            
+                    
+                            <div class="row first-row-enemies">
+                              <div class="col-xs-6">
+                                    <img src="public/images/mainpage/screenshot3.png" />
+                                
+                              </div>     
+                              <div class="col-xs-6">
+                                    <img src="public/images/mainpage/graveyard.png">
+                                    
+                                
+                              </div>
+                        
+                            </div>
+                           
+                    </br>
+                        <div class="row first-row-enemies">
+                                <div class="col-xs-6">
+                                   <img src="public/images/mainpage/screenshot1.png">
+                                  
+                                </div>     
+                                <div class="col-xs-6">
+                                      <img src="public/images/mainpage/screenshot4.png">
+                                      
+                                  
+                                </div>
+                          
+                              </div>
+                            </br>
+                             
+                          <div class="row first-row-enemies">
+                                <div class="col-xs-6">
+                                   <img src="public/images/mainpage/archershade.png">
+                                  
+                                </div>     
+                                <div class="col-xs-6">
+                                      <img src="public/images/mainpage/deathknightfight.png">
+                                      
+                                  
+                                </div>
+                          
+                              </div>
+                              </div>
+                          </div>
+</body>
+</html>
